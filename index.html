@@ -24,7 +24,7 @@
     <div class="bg-grid"></div>
 
     <!-- Navigation -->
-    <nav class="navbar hidden">
+    <nav class="navbar">
         <a href="#" class="logo">NS.</a>
         <ul class="nav-links">
             <li><a href="#about" class="hover-underline">About</a></li>
@@ -32,19 +32,20 @@
             <li><a href="#projects" class="hover-underline">Projects</a></li>
             <li><a href="#experience" class="hover-underline">Experience</a></li>
         </ul>
-        <a href="#contact" class="btn btn-nav">Let's Talk</a>
+        <a href="#" class="btn btn-nav"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
     </nav>
 
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero hidden">
-            <p class="tagline">Hello World, I'm</p>
-            <h1 class="hero-title">Navneet <span>Singh</span></h1>
-            <h2 class="hero-subtitle">CS Undergrad & Front-End Developer.</h2>
-            <p class="hero-desc">Solving problems and building interactive web experiences with modern technologies.</p>
-            <div class="hero-ctas">
+            <p class="tagline scramble" data-value="Hello World, I'm">Hello World, I'm</p>
+            <h1 class="hero-title">
+                <span class="scramble" data-value="Navneet">Navneet</span>&nbsp;<span class="highlight scramble" data-value="Singh">Singh</span>
+            </h1>
+            <h2 class="hero-subtitle scramble" data-value="CS Undergrad & Front-End Developer.">CS Undergrad & Front-End Developer.</h2>
+            <p class="hero-desc reveal-delayed">Solving problems and building interactive web experiences with modern technologies.</p>
+            <div class="hero-ctas reveal-delayed-cta">
                 <a href="#projects" class="btn btn-primary">Selected Work</a>
-                <a href="https://www.linkedin.com/in/navneet-singh-bb5319246/" class="btn btn-outline" target="_blank">LinkedIn</a>
             </div>
             <div class="scroll-indicator">
                 <i class="fa-solid fa-chevron-down"></i>
@@ -55,17 +56,23 @@
         <section id="about" class="about section-padding hidden">
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I am a Computer Science undergraduate highly interested in <strong>web development and problem solving</strong>. I actively practice Data Structures and Algorithms with over 45+ problems solved on LeetCode and 150+ on CodeChef.</p>
-                    <p>I thrive in competitive environments, recently securing <strong>2nd place at the InnoVEDAM 24-hour Hackathon</strong>.</p>
+                <div class="about-image-wrapper hover-glow">
+                    <img src="images/profile.jpg" alt="Navneet Singh" class="about-image">
                 </div>
-                <div class="education-card hover-glow">
-                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-                    <p><strong>B.Tech in Computer Science Engineering (AI)</strong></p>
-                    <p>Vedam School of Technology, Ajeenkya DY Patil University, Pune</p>
-                    <div class="edu-meta">
-                        <span class="pill neon-pill">Batch: 2025 - 2029</span>
-                        <span class="pill neon-pill">CGPA: 8.0</span>
+                <div class="about-details">
+                    <div class="about-text">
+                        <p>I am an aspiring software engineer and <strong>AI Enthusiast</strong> with a profound interest in modern <strong>web development and problem solving</strong>. I see myself as a future builder, constantly focused on continuous learning, staying up-to-date with bleeding-edge technologies, and crafting meaningful software.</p>
+                        <p>I bring theoretical knowledge into practice by staying highly active with Data Structures and Algorithms, conquering over 75+ problems on LeetCode and 150+ on CodeChef to sharpen my analytical logic.</p>
+                        <p>I thrive in high-pressure, competitive environments, recently proving my technical agility by securing <strong>2nd place at the InnoVEDAM 24-hour Hackathon</strong>.</p>
+                    </div>
+                    <div class="education-card hover-glow">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <p><strong>B.Tech in Computer Science Engineering (AI)</strong></p>
+                        <p>Vedam School of Technology, Ajeenkya DY Patil University, Pune</p>
+                        <div class="edu-meta">
+                            <span class="pill neon-pill">Batch: 2025 - 2029</span>
+                            <span class="pill neon-pill">CGPA: 8.0</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,90 +120,120 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects section-padding hidden">
-            <h2 class="section-title">Featured <span>Projects</span></h2>
-            <div class="project-grid">
+            <div class="section-header-wrap">
+                <h2 class="section-title">Technical <span>Builds</span></h2>
+                <p class="section-subtitle">An in-depth look at architecture, challenges, and impact.</p>
+            </div>
+            
+            <div class="projects-stack">
                 <!-- Study Buddy -->
-                <div class="project-card hover-glow">
-                    <div class="project-content">
-                        <h3 class="project-title">Study Buddy</h3>
-                        <p class="project-subtitle">AI Code Review & Practice Platform</p>
-                        <ul class="project-bullets">
-                            <li>Built a browser-based Java coding platform using React, Vite, Monaco Editor, and Firebase.</li>
-                            <li>Integrated Piston API for real-time execution and Gemini AI API for automated code review.</li>
-                            <li>Implemented user auth, progress tracking, and AI-based quiz generation.</li>
-                            <li><strong>Winner:</strong> 2nd place at a 24-hour college hackathon (among 24 teams).</li>
-                        </ul>
-                    </div>
-                    <div class="project-footer">
-                        <div class="tech-stack">
-                            <span class="pill glow-on-hover"><i class="devicon-react-original colored"></i> React</span>
-                            <span class="pill glow-on-hover"><i class="devicon-firebase-plain colored"></i> Firebase</span>
-                            <span class="pill glow-on-hover"><i class="fa-solid fa-robot" style="color:#4285F4;"></i> Gemini API</span>
+                <article class="project-showcase-card stick-card hover-glow">
+                    <div class="project-details">
+                        <div class="project-tag-wrap">
+                            <span class="project-year">2026</span>
+                            <span class="project-tag">AI / Full-Stack</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <h3 class="project-title-large">Study Buddy</h3>
+                        <p class="project-abstract">A comprehensive browser-based code practice environment with automated AI reviews. Built to enhance the learning curve for programmers through real-time execution and intelligent feedback.</p>
+                        
+                        <div class="project-feature-blocks">
+                            <div class="feature-block"><strong>Engine:</strong> Real-time Piston API execution</div>
+                            <div class="feature-block"><strong>Intelligence:</strong> Automated Gemini AI reviews</div>
+                            <div class="feature-block"><strong>Achievement:</strong> 2nd Place at 24H Hackathon</div>
+                        </div>
+
+                        <div class="project-tech-large">
+                            <span class="pill neon-pill"><i class="devicon-react-original colored"></i> React</span>
+                            <span class="pill outline-pill"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                        </div>
+                        
+                        <div class="project-actions-large">
+                            <a href="#" class="btn btn-primary" target="_blank">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <!-- Impactful Maps -->
-                <div class="project-card hover-glow">
-                    <div class="project-content">
-                        <h3 class="project-title">Impactful Maps</h3>
-                        <p class="project-subtitle">Context-Aware Navigation System</p>
-                        <ul class="project-bullets">
-                            <li>Built a navigation web application using HTML, CSS, and JS that adapts routes based on user context.</li>
-                            <li>Integrated MapLibre GL JS with OSRM API to generate real-time routes.</li>
-                            <li>Implemented reverse geocoding via OpenStreetMap Nominatim API.</li>
-                            <li>Designed ETA calculation and responsive UI dynamically without external UI frameworks.</li>
-                        </ul>
-                    </div>
-                    <div class="project-footer">
-                        <div class="tech-stack">
-                            <span class="pill glow-on-hover"><i class="devicon-javascript-plain colored"></i> Vanilla JS</span>
-                            <span class="pill glow-on-hover"><i class="fa-solid fa-map-location-dot" style="color:#39FF14;"></i> MapLibre JS</span>
-                            <span class="pill glow-on-hover"><i class="fa-solid fa-route" style="color:#39FF14;"></i> OSRM API</span>
+                <article class="project-showcase-card stick-card hover-glow">
+                    <div class="project-details">
+                         <div class="project-tag-wrap">
+                            <span class="project-year">2025</span>
+                            <span class="project-tag">Routing / Maps</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                        <h3 class="project-title-large">Impactful Maps</h3>
+                        <p class="project-abstract">A context-aware navigation system adapting routes dynamically. Designed responsive UI and ETA calculation from scratch without heavy frameworks by integrating geospatial data.</p>
+                        
+                        <div class="project-feature-blocks">
+                            <div class="feature-block"><strong>Maps:</strong> MapLibre GL Integration</div>
+                            <div class="feature-block"><strong>Routing:</strong> Dynamically via OSRM API</div>
+                            <div class="feature-block"><strong>Geocoding:</strong> OpenStreetMap Nominatim</div>
+                        </div>
+
+                        <div class="project-tech-large">
+                            <span class="pill neon-pill"><i class="devicon-javascript-plain colored"></i> Vanilla JS</span>
+                            <span class="pill outline-pill">OSRM</span>
+                        </div>
+                        
+                        <div class="project-actions-large">
+                            <a href="#" class="btn btn-primary" target="_blank">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#" class="btn btn-outline" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
         <!-- Experience & Achievements -->
         <section id="experience" class="experience section-padding hidden">
             <h2 class="section-title">Leadership & <span>Achievements</span></h2>
-            <div class="exp-grid">
-                <div class="exp-panel hover-glow">
-                    <h3>Positions of Responsibility</h3>
-                    <ul class="exp-list">
-                        <li>
-                            <strong>Operational Head</strong> — <em>Open Source Club</em>
-                            <p>Managed community activities and coordinated open-source initiatives.</p>
-                        </li>
-                        <li>
-                            <strong>Head</strong> — <em>Wordsmith Society</em>
-                            <p>Mentored students in public speaking and hosted college events.</p>
-                        </li>
-                        <li>
-                            <strong>Sponsorship Head</strong> — <em>NOESIS 2026 Tech Fest</em>
-                            <p>Led sponsorship outreach and partnerships for the college tech fest.</p>
-                        </li>
-                    </ul>
+            <div class="bento-grid">
+                <div class="bento-card hover-glow col-span-2">
+                    <i class="fa-solid fa-trophy highlight bento-icon-lg"></i>
+                    <div class="bento-content">
+                        <h3>2nd Place – InnoVEDAM Hackathon</h3>
+                        <p>Secured a podium finish out of 24 competing teams in an intensive 24-hour hackathon. Demonstrated rapid prototyping and solid teamwork to deploy a fully functional web platform under extremely tight constraints.</p>
+                    </div>
                 </div>
-                <div class="exp-panel hover-glow">
-                    <h3>Key Achievements</h3>
-                    <ul class="achieve-list">
-                        <li><i class="fa-solid fa-trophy highlight"></i> 2nd Place – InnoVEDAM 24-hour Hackathon</li>
-                        <li><i class="fa-solid fa-code highlight"></i> Solved 45+ LeetCode problems</li>
-                        <li><i class="fa-solid fa-code highlight"></i> Solved 150+ CodeChef problems</li>
-                        <li><i class="fa-solid fa-medal highlight"></i> IMO School Gold Medalist (Class 10)</li>
-                        <li><i class="fa-solid fa-star highlight"></i> Spell Bee Olympiad – Advanced to State Level</li>
-                    </ul>
+
+                <div class="bento-card hover-glow">
+                    <i class="fa-solid fa-code highlight bento-icon-lg"></i>
+                    <div class="bento-content">
+                        <h3>Problem Solving</h3>
+                        <p>Optimizing code efficiency using algorithmic logic.<br><br><strong>75+</strong> LeetCode <br><strong>150+</strong> CodeChef</p>
+                    </div>
+                </div>
+
+                <div class="bento-card hover-glow">
+                    <i class="fa-solid fa-medal highlight bento-icon-lg"></i>
+                    <div class="bento-content">
+                        <h3>IMO Gold Medalist</h3>
+                        <p>Secured the top school rank globally in the Int. Mathematics Olympiad.<br>Showcased foundational abstract reasoning.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card hover-glow col-span-2">
+                    <i class="fa-solid fa-users highlight bento-icon-lg"></i>
+                    <div class="bento-content">
+                        <h3>Operational Head <br><span>@ Open Source Club</span></h3>
+                        <p>Spearheaded community tech events and coordinated collaborative coding efforts. Successfully fostered an open-source culture by encouraging peers to actively contribute to community-driven repositories.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card hover-glow">
+                    <i class="fa-solid fa-microphone highlight bento-icon-lg"></i>
+                    <div class="bento-content">
+                        <h3>Head <br><span>@ Wordsmith Society</span></h3>
+                        <p>Successfully orchestrated wide-scale collegiate events and directly mentored junior students in institutional public speaking.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card hover-glow col-span-2">
+                    <i class="fa-solid fa-handshake highlight bento-icon-lg"></i>
+                    <div class="bento-content">
+                        <h3>Sponsorship Head <br><span>@ NOESIS 2026</span></h3>
+                        <p>Led the financial footprint strategy for the institution's primary tech fest. Formulated compelling campaigns to secure high-value brand partnerships and seamlessly coordinate investor relations.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -206,10 +243,14 @@
             <h2 class="section-title">Get In <span>Touch</span></h2>
             <div class="contact-card hover-glow">
                 <p>Currently looking for new opportunities and collaborations. My inbox is always open!</p>
-                <a href="mailto:navneet03030708@gmail.com" class="btn btn-primary btn-large">Say Hello</a>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="resume.md" class="btn btn-primary btn-large" download="Navneet_Singh_Resume.md"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                </div>
                 <div class="social-links">
-                    <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/navneet-singh7307/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/navneat-codes" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_navneet_0307/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://leetcode.com/u/Navneet_0307/" target="_blank" title="LeetCode"><i class="fa-solid fa-laptop-code"></i></a>
                 </div>
             </div>
         </section>
