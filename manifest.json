@@ -1,0 +1,17 @@
+{
+  "name": "Navneet Singh | Front-End Developer",
+  "short_name": "Navneet Singh",
+  "description": "Portfolio of Navneet Singh, CS Undergrad and Front-End Developer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030303",
+  "theme_color": "#030303",
+  "icons": [
+    {
+      "src": "images/profile.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
